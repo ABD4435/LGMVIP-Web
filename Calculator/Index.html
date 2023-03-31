@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="calculator">
+      <div class="row">
+        <input id="display" type="text" disabled>
+      </div>
+      <div class="row">
+        <button onclick="clearLastInput()">CE</button>
+        <button onclick="clearInput()">C</button>
+        <button onclick="backspace()"><img src="delete1.png"></button>
+        <button onclick="addInput('×')">×</button>
+      </div>
+      <div class="row">
+        <button onclick="addInput('7')">7</button>
+        <button onclick="addInput('8')">8</button>
+        <button onclick="addInput('9')">9</button>
+        <button onclick="addInput('-')">-</button>
+      </div>
+      <div class="row">
+        <button onclick="addInput('4')">4</button>
+        <button onclick="addInput('5')">5</button>
+        <button onclick="addInput('6')">6</button>
+        <button onclick="addInput('+')">+</button>
+      </div>
+      <div class="row">
+        <button onclick="addInput('1')">1</button>
+        <button onclick="addInput('2')">2</button>
+        <button onclick="addInput('3')">3</button>
+        <button onclick="addInput('/')">/</button>
+      </div>
+      <div class="row">
+        <button onclick="addInput('0')">0</button>
+        <button onclick="addInput('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
